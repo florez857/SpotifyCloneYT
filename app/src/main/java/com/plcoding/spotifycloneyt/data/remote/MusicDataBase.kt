@@ -10,8 +10,9 @@ class MusicDataBase {
 
     private val firestore = FirebaseFirestore.getInstance()
     private val songCollection = firestore.collection(SONG_COLLECTION)
+
     init {
-        Log.d("hola","hola")
+        Log.d("hola", "hola")
     }
 
     suspend fun getAllSong(): List<Song> {
